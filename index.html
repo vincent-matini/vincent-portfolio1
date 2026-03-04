@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="start.css">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Introduction to Web Development</title>
+    <header class="nav">
+        <div class="logo">IntroductionTo coding</div>
+        <nav class="navbar">
+            <a href="#" class="logo">MATINI.</a>
+            <a href="#" class="logo">PTSP</a>
+
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact" class="nav-btn">Contact</a></li>
+            </ul>
+
+            <div class="menu-toggle" onclick="document.querySelector('.nav-links').classList.toggle('active')">
+                <span>kit1</span>
+                <span>kit2</span>
+                <span>kit3</span>
+            </div>
+        </nav>
+    </header>
+</head>
+<body>
+    <main>
+        <!-- DARK LIGHT TOGGLE -->
+<div class="theme-toggle">
+    <button id="toggleBtn">🌙</button>
+</div>
+
+<section class="tech-section" id="home">
+
+    <div class="tech-container">
+
+        <!-- HTML -->
+        <div class="tech-card">
+            <img src="https://images.unsplash.com/photo-1587620962725-abab7fe55159" alt="HTML Code">
+            <div class="tech-content">
+                <h2>HTML (HyperText Markup Language)</h2>
+                <p>
+                    HTML is the foundation of the web. It structures content using elements like headings, paragraphs, images, forms, and links.
+                    Every website starts with HTML.
+                </p>
+
+                <h3>What You Must Learn:</h3>
+                <ul>
+                    <li>Elements & Tags</li>
+                    <li>Forms & Inputs</li>
+                    <li>Semantic Tags</li>
+                    <li>SEO Basics</li>
+                    <li>Accessibility</li>
+                </ul>
+
+                <h3>How To Start:</h3>
+                <p>
+                    Begin with basic tags like div, h1-h6, p, a, img, and form. 
+                    Practice building simple pages before moving to full layouts.
+                </p>
+            </div>
+        </div>
+
+        <!-- CSS -->
+        <div class="tech-card reverse">
+            <img src="https://images.unsplash.com/photo-1505685296765-3a2736de412f" alt="CSS Styling">
+            <div class="tech-content">
+                <h2>CSS (Cascading Style Sheets)</h2>
+                <p>
+                    CSS controls design, layout, animations, responsiveness, and visual presentation.
+                    It transforms plain HTML into beautiful interfaces.
+                </p>
+
+                <h3>What You Must Learn:</h3>
+                <ul>
+                    <li>Selectors & Specificity</li>
+                    <li>Flexbox & Grid</li>
+                    <li>Responsive Design</li>
+                    <li>Transitions & Animations</li>
+                    <li>Positioning</li>
+                </ul>
+
+                <h3>How To Start:</h3>
+                <p>
+                    Master Flexbox first. Then move to Grid. Practice cloning modern UI designs.
+                </p>
+            </div>
+        </div>
+
+        <!-- JavaScript -->
+        <div class="tech-card">
+            <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c" alt="JavaScript">
+            <div class="tech-content">
+                <h2>JavaScript</h2>
+                <p>
+                    JavaScript makes websites interactive. It handles logic, user interaction,
+                    API calls, animations, and dynamic content updates.
+                </p>
+
+                <h3>What You Must Learn:</h3>
+                <ul>
+                    <li>Variables & Functions</li>
+                    <li>DOM Manipulation</li>
+                    <li>Events</li>
+                    <li>Async & Fetch API</li>
+                    <li>ES6+ Features</li>
+                </ul>
+
+                <h3>How To Start:</h3>
+                <p>
+                    Start with fundamentals. Build mini projects like calculators, to-do apps, 
+                    and interactive forms.
+                </p>
+            </div>
+        </div>
+
+        <!-- React -->
+        <div class="tech-card reverse">
+            <img src="https://images.unsplash.com/photo-1633356122544-f134324a6cee" alt="React JS">
+            <div class="tech-content">
+                <h2>React</h2>
+                <p>
+                    React is a JavaScript library for building fast, scalable user interfaces.
+                    It uses components and state management to create dynamic web apps.
+                </p>
+
+                <h3>What You Must Learn:</h3>
+                <ul>
+                    <li>Components</li>
+                    <li>Props & State</li>
+                    <li>Hooks</li>
+                    <li>Routing</li>
+                    <li>API Integration</li>
+                </ul>
+
+                <h3>How To Start:</h3>
+                <p>
+                    Master JavaScript first. Then learn component-based architecture.
+                    Build small apps before full-scale systems.
+                </p>
+            </div>
+        </div>
+
+        <!-- Python -->
+        <div class="tech-card">
+            <img src="https://images.unsplash.com/photo-1526379095098-d400fd0bf935" alt="Python Programming">
+            <div class="tech-content">
+                <h2>Python</h2>
+                <p>
+                    Python is powerful for backend development, automation, AI, data science,
+                    cybersecurity tools, and scripting.
+                </p>
+
+                <h3>What You Must Learn:</h3>
+                <ul>
+                    <li>Data Types</li>
+                    <li>Functions & OOP</li>
+                    <li>Flask or Django</li>
+                    <li>APIs</li>
+                    <li>Automation & AI Libraries</li>
+                </ul>
+
+                <h3>How To Start:</h3>
+                <p>
+                    Start with basics, then build automation scripts. Move into backend frameworks
+                    and later explore AI and data science.
+                </p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- SKILLS SECTION -->
+<section class="skills-section" id="about">
+    <h2>Technical Skills</h2>
+
+    <div class="skill">
+        <p>HTML</p>
+        <div class="progress"><div class="progress-bar" data-width="95%"></div></div>
+    </div>
+
+    <div class="skill">
+        <p>CSS</p>
+        <div class="progress"><div class="progress-bar" data-width="90%"></div></div>
+    </div>
+
+    <div class="skill">
+        <p>JavaScript</p>
+        <div class="progress"><div class="progress-bar" data-width="85%"></div></div>
+    </div>
+
+    <div class="skill">
+        <p>React</p>
+        <div class="progress"><div class="progress-bar" data-width="80%"></div></div>
+    </div>
+
+    <div class="skill">
+        <p>Python</p>
+        <div class="progress"><div class="progress-bar" data-width="88%"></div></div>
+    </div>
+</section>
+
+<!-- CERTIFICATIONS -->
+<section class="cert-section" id="services">
+    <h2>Certifications</h2>
+    <div class="cert-grid">
+        <div class="cert-card">Cybersecurity Professional</div>
+        <div class="cert-card">AI & Machine Learning</div>
+        <div class="cert-card">Full Stack Web Development</div>
+        <div class="cert-card">Ethical Hacking</div>
+    </div>
+</section>
+
+<!-- PROJECT SHOWCASE -->
+<section class="projects-section" id="projects">
+    <h2>Projects</h2>
+
+    <div class="project-grid">
+
+        <div class="project-card">
+            <h3>Trading Bot</h3>
+            <p>Automated trading system with API integration.</p>
+        </div>
+
+        <div class="project-card">
+            <h3>Portfolio Website</h3>
+            <p>Modern responsive portfolio with animations.</p>
+        </div>
+
+        <div class="project-card">
+            <h3>Cybersecurity Tool</h3>
+            <p>Security scanner and vulnerability analyzer.</p>
+        </div>
+
+        <div class="project-card">
+            <h3>AI Chat System</h3>
+            <p>AI assistant powered automation tool.</p>
+        </div>
+
+        <!-- BILLING SYSTEM CENTERED -->
+        <div class="project-card billing">
+            <h3>Billing System</h3>
+            <p>WIFI, Supermarket and small shop online billing systems</p>
+        </div>
+
+    </div>
+</section>
+
+<!-- BLOG SECTION -->
+<section class="blog-section">
+    <h2>Latest Blog</h2>
+    <div class="blog-grid">
+        <div class="blog-card">
+            <h3>How to Master JavaScript</h3>
+            <p>Deep dive into ES6, DOM, and async programming.</p>
+        </div>
+        <div class="blog-card">
+            <h3>Cybersecurity Basics</h3>
+            <p>Understanding vulnerabilities and protection methods.</p>
+        </div>
+        <div class="blog-card">
+            <h3>React Best Practices</h3>
+            <p>Building scalable and maintainable UI applications.</p>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer id="contact">
+    <h3>Matini Vincent</h3>
+    <p>Software Developer | Cybersecurity | AI Specialist</p>
+
+    <div class="social-icons">
+        <a href="https://t.me/@ptspmatini" target="_blank">
+            <img src="https://cdn-icons-png.flaticon.com/512/2111/2111646.png" alt="Telegram">
+        </a>
+        <a href="https://wa.me/254102449737" target="_blank">
+            <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
+        </a>
+    </div>
+
+    <p class="copyright">© 2026 All Rights Reserved</p>
+</footer>
+
+<!-- JAVASCRIPT -->
+<script>
+const toggleBtn = document.getElementById("toggleBtn");
+toggleBtn.onclick = () => {
+    document.body.classList.toggle("light-mode");
+    toggleBtn.textContent =
+        document.body.classList.contains("light-mode") ? "☀️" : "🌙";
+};
+
+// Animate Progress Bars
+window.onload = () => {
+    document.querySelectorAll(".progress-bar").forEach(bar => {
+        bar.style.width = bar.dataset.width;
+    });
+};
+</script>
+    </main>
+<footer>
+
+</footer>
+</body>
+</html>
