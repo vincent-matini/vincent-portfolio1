@@ -180,7 +180,63 @@
 
         <section class="videos-section" id="videos">
             <h2>Video Lessons</h2>
-            <p class="section-intro">This section is read-only for visitors. Only the site owner can add or edit videos in the project source code.</p>
+            <p class="section-intro">Public visitors can only watch videos. Owner access is required to publish or remove lessons.</p>
+            <article class="admin-panel" id="adminPanel">
+                <div class="admin-head">
+                    <h3>Owner Video Manager</h3>
+                    <p id="adminBadge" class="admin-badge">Signed out</p>
+                </div>
+                <p class="admin-help">Sign in with your owner account to manage videos.</p>
+                <div class="admin-auth-row">
+                    <input type="email" id="adminEmail" placeholder="Owner email">
+                    <input type="password" id="adminPassword" placeholder="Password">
+                    <button type="button" id="adminLoginBtn" class="admin-btn">Sign In</button>
+                    <button type="button" id="adminLogoutBtn" class="admin-btn hidden">Sign Out</button>
+                </div>
+                <p id="adminStatus" class="admin-status" aria-live="polite"></p>
+
+                <form id="videoUploadForm" class="video-form">
+                    <div class="video-form-grid">
+                        <label>
+                            Title
+                            <input type="text" id="videoTitle" name="videoTitle" required>
+                        </label>
+                        <label>
+                            Tech
+                            <select id="videoTech" name="videoTech" required>
+                                <option value="HTML">HTML</option>
+                                <option value="CSS">CSS</option>
+                                <option value="JavaScript">JavaScript</option>
+                                <option value="React">React</option>
+                                <option value="Python">Python</option>
+                            </select>
+                        </label>
+                        <label>
+                            Level
+                            <select id="videoLevel" name="videoLevel" required>
+                                <option value="Beginner">Beginner</option>
+                                <option value="Intermediate">Intermediate</option>
+                                <option value="Advanced">Advanced</option>
+                            </select>
+                        </label>
+                        <label>
+                            Duration
+                            <input type="text" id="videoDuration" name="videoDuration" placeholder="e.g. 45 min" required>
+                        </label>
+                    </div>
+                    <label>
+                        YouTube URL
+                        <input type="url" id="videoUrl" name="videoUrl" placeholder="https://www.youtube.com/watch?v=..." required>
+                    </label>
+                    <label>
+                        Description
+                        <textarea id="videoDescription" name="videoDescription" rows="3" required></textarea>
+                    </label>
+                    <button type="submit" class="video-submit">Publish Video</button>
+                    <p id="uploadStatus" class="video-form-note" aria-live="polite"></p>
+                </form>
+            </article>
+            <p id="videoStatus" class="video-status" aria-live="polite"></p>
             <div class="video-filters" id="videoFilters" aria-label="Filter video lessons"></div>
             <div class="video-grid" id="videoGrid" aria-live="polite"></div>
         </section>
@@ -218,6 +274,6 @@
         <p class="copyright">© 2026 All Rights Reserved</p>
     </footer>
 
-    <script src="main.js" defer></script>
+    <script type="module" src="main.js"></script>
 </body>
 </html>
